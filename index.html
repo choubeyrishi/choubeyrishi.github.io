@@ -45,11 +45,11 @@
         <h2>Project Overview</h2>
 
         <p>
-            I acquired a non-running Tesla and performed a systematic
+            I got a clean-title non-running 2018 Tesla Model 3 Dual Motor and performed a systematic
             diagnostic process to determine the source of the vehicle's
             failure. Using battery-level CAN bus data and independent
-            diagnostic tools, I determined that the high-voltage battery
-            pack was responsible for the issue.
+            diagnostic tools, I determined that a cell imbalance from one cell was causing issues. Therefore,
+            the high voltage battery could be repaired or replaced. 
         </p>
 
     </section>
@@ -62,8 +62,8 @@
         <div class="content-row">
 
             <img
-                src="images/tesla-esp32.jpg"
-                alt="Waveshare ESP32 connected for CAN bus diagnostics"
+                src="images/IMG_3545.JPG"
+                alt="Waveshare ESP32 and OBD2 Scanner connected for CAN bus diagnostics"
             >
 
             <div>
@@ -71,7 +71,9 @@
                 <p>
                     I connected a Waveshare ESP32 to the battery data
                     interface to access information from the battery
-                    management system over the CAN bus.
+                    management system over the CAN bus. Three wires 
+                    connected to the data port power supply, two wires for the BMS power supply,
+                    and two wires for can high and can low. These wires also connected to the bluetooth OBD2 scanner
                 </p>
 
                 <p>
