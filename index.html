@@ -69,16 +69,15 @@
             <div>
 
                 <p>
-                    I connected a Waveshare ESP32 to the battery data
-                    interface to access information from the battery
-                    management system over the CAN bus. Three wires 
-                    connected to the data port power supply, two wires for the BMS power supply,
-                    and two wires for can high and can low. These wires also connected to the bluetooth OBD2 scanner
+                    I connected a Waveshare ESP32 and bluetooth OBD2 scanner with the battery's data port. 
+                    The pins connected were CAN high, CAN low, power supply pins, as well as 12V for the 
+                    BMS. Everything was powered off a 12V 7Ah lead-acid battery. 
+                    
                 </p>
 
                 <p>
                     The ESP32 transmitted the battery telemetry over
-                    Wi-Fi, allowing me to view diagnostic information
+                    Wi-Fi, and the OBD2 scanner over bluetooth, allowing me to view diagnostic information
                     directly from my phone.
                 </p>
 
@@ -103,10 +102,10 @@
             <div>
 
                 <p>
-                    I also connected the battery data port to a Bluetooth
-                    OBD-II adapter and used Scan My Tesla to analyze
-                    individual cell groups, cell maps, and other battery
-                    information.
+                    With my diagnostic tools, I viewed the cell map of the battery, and identified as one cell being extremely discharged,
+                    which means the difference between the highest and lowest voltage cell was too high. Therefore, the BMS would not let the 
+                    contactors close in the Tesla. 
+                    
                 </p>
 
                 <p>
@@ -121,7 +120,29 @@
 
     </section>
 
+    <section>
+        <h2>Battery Removal</h2>
 
+        <div class="content-row">
+
+            <img
+                src="images/IMG_3437.JPG"
+                alt="Tesla Battery Removed"
+            >
+
+            <div>
+
+                <p>
+                    Following Tesla's official service guide for battery removals, all necessary connections and bolts were undone, and it was rolled out from 
+                    underneath the car. 
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    
     <section>
 
         <h2>Battery Replacement</h2>
