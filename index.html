@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rishi Choubey | Tesla Battery Diagnostics</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Rishi Choubey</h1>
+    <p>Electrical Engineering Student at Virginia Tech</p>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <img
+            src="images/tesla-main.jpg"
+            alt="Tesla high-voltage battery diagnostic project"
+        >
+
+        <div class="hero-text">
+
+            <h2>Tesla High-Voltage Battery Diagnostics & Repair</h2>
+
+            <p>
+                Diagnosed and repaired a non-running Tesla by analyzing
+                high-voltage battery data through the vehicle's CAN bus.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="info-box">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            I acquired a non-running Tesla and performed a systematic
+            diagnostic process to determine the source of the vehicle's
+            failure. Using battery-level CAN bus data and independent
+            diagnostic tools, I determined that the high-voltage battery
+            pack was responsible for the issue.
+        </p>
+
+    </section>
+
+
+    <section>
+
+        <h2>CAN Bus Diagnostics</h2>
+
+        <div class="content-row">
+
+            <img
+                src="images/tesla-esp32.jpg"
+                alt="Waveshare ESP32 connected for CAN bus diagnostics"
+            >
+
+            <div>
+
+                <p>
+                    I connected a Waveshare ESP32 to the battery data
+                    interface to access information from the battery
+                    management system over the CAN bus.
+                </p>
+
+                <p>
+                    The ESP32 transmitted the battery telemetry over
+                    Wi-Fi, allowing me to view diagnostic information
+                    directly from my phone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Battery Analysis</h2>
+
+        <div class="content-row">
+
+            <img
+                src="images/tesla-cellmap.jpg"
+                alt="Tesla battery cell map"
+            >
+
+            <div>
+
+                <p>
+                    I also connected the battery data port to a Bluetooth
+                    OBD-II adapter and used Scan My Tesla to analyze
+                    individual cell groups, cell maps, and other battery
+                    information.
+                </p>
+
+                <p>
+                    Comparing the available battery telemetry allowed me
+                    to isolate the high-voltage battery pack as the source
+                    of the vehicle's no-start condition.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Battery Replacement</h2>
+
+        <div class="content-row">
+
+            <img
+                src="images/tesla-battery.jpg"
+                alt="Tesla high-voltage battery replacement"
+            >
+
+            <div>
+
+                <p>
+                    After identifying the failed pack, I sourced a
+                    replacement high-voltage battery and installed it
+                    in the vehicle.
+                </p>
+
+                <p>
+                    I then completed the required post-replacement
+                    battery routines to return the vehicle to normal
+                    operation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>Final Repairs & Validation</h2>
+
+        <div class="content-row">
+
+            <img
+                src="images/tesla-suspension.jpg"
+                alt="Tesla suspension repair"
+            >
+
+            <div>
+
+                <p>
+                    I completed additional minor suspension work required
+                    for inspection and verified that the vehicle was ready
+                    to return to service.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="info-box">
+
+        <h2>Tools & Technologies</h2>
+
+        <p>
+            ESP32 • CAN Bus • OBD-II • Scan My Tesla •
+            Battery Management Systems • Automotive Diagnostics
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>Rishi Choubey | Electrical Engineering</p>
+
+</footer>
+
+</body>
+
+</html>
