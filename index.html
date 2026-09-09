@@ -47,9 +47,8 @@
         <p>
             I got a clean-title non-running 2018 Tesla Model 3 Dual Motor and performed a systematic
             diagnostic process to determine the source of the vehicle's
-            failure. Using battery-level CAN bus data and independent
-            diagnostic tools, I determined that a cell imbalance from one cell was causing issues. Therefore,
-            the high voltage battery could be repaired or replaced. 
+            failure. Using battery-level CAN bus data, I determined that multiple cells were extremely discharged with respect to the rest of the battery. Therefore,
+            the easiest solution was to replace the HV battery. 
         </p>
 
     </section>
@@ -71,7 +70,7 @@
                 <p>
                     I connected a Waveshare ESP32 and bluetooth OBD2 scanner with the battery's data port. 
                     The pins connected were CAN high, CAN low, power supply pins, as well as 12V for the 
-                    BMS. Everything was powered off a 12V 7Ah lead-acid battery. 
+                    BMS. Everything was powered off of a 12V 7Ah lead-acid battery. 
                     
                 </p>
 
@@ -95,23 +94,17 @@
         <div class="content-row">
 
             <img
-                src="images/tesla-cellmap.jpg"
+                src="images/IMG_3469.PNG"
                 alt="Tesla battery cell map"
             >
 
             <div>
 
                 <p>
-                    With my diagnostic tools, I viewed the cell map of the battery, and identified as one cell being extremely discharged,
-                    which means the difference between the highest and lowest voltage cell was too high. Therefore, the BMS would not let the 
-                    contactors close in the Tesla. 
+                    With my diagnostic tools, I viewed the cell map of the battery, and identified multiple cells being extremely discharged. Since
+                    the voltage deviation was too high, the BMS would not let the contactors close. Additionally, the affected cells were in each module,
+                    making individual module replacements not realistic. 
                     
-                </p>
-
-                <p>
-                    Comparing the available battery telemetry allowed me
-                    to isolate the high-voltage battery pack as the source
-                    of the vehicle's no-start condition.
                 </p>
 
             </div>
@@ -154,12 +147,18 @@
                 alt="Tesla high-voltage battery replacement"
             >
 
+            <img
+                src="images/IMG_3437.JPG"
+                alt="Tesla Battery Removed"
+            >
+
             <div>
 
                 <p>
                     After identifying the failed pack, I sourced a
                     replacement high-voltage battery and installed it
-                    in the vehicle.
+                    in the vehicle. The battery was tested using the same diagnostic tool, and it showed a healthy cell map and a low amount of total charging,
+                    most of it coming from DC. 
                 </p>
 
                 <p>
